@@ -1,0 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+
+$navbar-height:                                        55px;
+$font-family-sans-serif:                'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$navbar-inverse-bg: #b84d45; 
+$navbar-inverse-link-color: white;
+
+$brand-primary: #c0392b;
+
+@import 'bootstrap';
+
+body {
+  background-color: #F5F5F1;}
+
+.navbar-brand {
+     
+      font-size: 20px;
+}
+
+
+.navbar-nav > li > a {
+  font-size: 13px;
+}
