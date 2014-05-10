@@ -1,6 +1,6 @@
-<h1>Listing listings</h1>
+<h1>My Job listings</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Job</th>
@@ -20,7 +20,6 @@
         <td><%= listing.description %></td>
         <td><%= number_to_currency(listing.salary) %></td>
         <td><%= listing.location %></td>
-        <td><%= "Posted by #{listing.user.name}" %></td>
         <td><%= link_to 'Show', listing, class: "btn btn-link" %></td>
         <td><%= link_to 'Edit', edit_listing_path(listing), class: "btn btn-link" %></td>
         <td><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link" %></td>
