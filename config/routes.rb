@@ -1,6 +1,7 @@
 Analyticsdemo::Application.routes.draw do
   
 
+  devise_for :users
   resources :listings
 
   get "about" => 'pages#about'
