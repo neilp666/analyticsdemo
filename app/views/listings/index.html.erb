@@ -18,8 +18,9 @@
       <tr>
         <td><%= listing.job %></td>
         <td><%= listing.description %></td>
-        <td><%= listing.salary %></td>
+        <td><%= number_to_currency(listing.salary) %></td>
         <td><%= listing.location %></td>
+        <td><%= "Posted by #{listing.user.name}" %></td>
         <td><%= link_to 'Show', listing, class: "btn btn-link" %></td>
         <td><%= link_to 'Edit', edit_listing_path(listing), class: "btn btn-link" %></td>
         <td><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link" %></td>
