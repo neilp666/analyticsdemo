@@ -6,6 +6,7 @@ Analyticsdemo::Application.routes.draw do
 
   get "about" => 'pages#about'
   get "contact" => 'pages#contact'
+  get "home" => 'pages#home'
 
   get "seller" => "listings#seller"
 
